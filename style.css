@@ -1,0 +1,130 @@
+.pagina{
+    display: grid;
+    grid-template-areas:
+
+        "cabecera cabecera cabecera cabecera"
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
+        "bajo__pagina bajo__pagina bajo__pagina bajo__pagina"
+    ;
+}
+
+.cabecera{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.galeria__logo{
+    width: 10%;
+    border: solid;
+}
+.cabecera__navegacion{
+
+    
+}
+
+
+
+.barraNavegacion{
+    text-decoration: none;
+    color: rgb(0, 0, 203);
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+   
+
+
+}
+
+.barraNavegacion li{
+    transition: all 1s;
+}
+.barraNavegacion li:hover{
+    transform: scale(1.0);
+    background-color: rgba(8, 1, 1, 0.261);
+}
+
+.cabecera__navrgacion__lista{
+    display: inline-block;
+    margin: 15px;
+    border: solid 1px black;
+    padding: 5px; 
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+.galeria{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: normal;
+
+}
+.spamm{
+    color:blue ;
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    
+}
+@keyframes agranda{}
+    
+
+.bajo__pagina{
+    list-style: none;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.insta{
+
+}
+
+
+    
+
+    
+
+
+
+.galeria__imagen{
+    border: solid 2px black;
+    height: 500px;
+    width: 800px;
+    text-align: center;
+
+    }
+
+@media only screen and (max-width: 768px){
+    .iframe{
+        display: none;
+    }
+    
+}
