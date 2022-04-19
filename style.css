@@ -1,18 +1,25 @@
 .pagina{
     display: grid;
-    grid-template-areas:
-
+    grid-template-areas: 
         "cabecera cabecera cabecera cabecera"
         "galeria galeria galeria galeria"
         "galeria galeria galeria galeria"
         "galeria galeria galeria galeria"
         "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "bajo__pagina bajo__pagina bajo__pagina bajo__pagina"
+        "bajo__paa bajo__pagina bajo__pagina bajo__pagina"
+    
+    
     ;
 }
-
+.header{
+    grid-area: cabecera;
+}
+.footer{
+    grid-area: bajo__pagina;
+}
+.main{
+    grid-area: galeria;
+}
 .cabecera{
     background-color: blue;
     display: flex;
@@ -25,10 +32,8 @@
     width: 10%;
     border: solid;
 }
-.cabecera__navegacion{
+.cabecera__navegacion{}
 
-    
-}
 
 
 
@@ -83,13 +88,14 @@ a{
     line-height: normal;
 
 }
+
 .spamm{
     color:blue ;
     animation-name: agrandar;
     animation-iteration-count: infinite;
     animation-duration: 4s;
     animation-timing-function: linear;
-    
+   
 }
 @keyframes agranda{}
     
@@ -104,7 +110,7 @@ a{
     flex-wrap: wrap;
 }
 .insta{
-
+list-style: none;
 }
 
 
@@ -121,6 +127,27 @@ a{
     text-align: center;
 
     }
+    /* quienes somos */
+.spamm2{
+    color: black;
+    text-align: center;
+    
+
+}
+.foto2{
+    border: solid 2px black;
+    height: 450px;
+    width: 450px;
+   
+    
+}
+.foto3{
+    border: solid 2px black;
+    height: 450px;
+    width: 450px;
+   
+    
+}
 
 @media only screen and (max-width: 768px){
     .iframe{
