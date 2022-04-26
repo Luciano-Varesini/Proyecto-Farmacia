@@ -1,17 +1,4 @@
-.pagina{
-    display: grid;
-    grid-template-areas: 
-        "cabecera cabecera cabecera cabecera"
-        "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "galeria galeria galeria galeria"
-        "bajo__paa bajo__pagina bajo__pagina bajo__pagina"
-    
-    
-    ;
-}
+
 .header{
     grid-area: cabecera;
 }
