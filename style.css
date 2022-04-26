@@ -17,20 +17,8 @@
     flex-wrap: wrap;
 }
 .galeria__logo{
-    width: 10%;
+    width: 20%;
     border: solid;
-    animation-name: girar;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-delay: 0s;
-}
-@keyframes girar{
-    0%{ transform: rotateX(0dsg);}
-    25%{transform: rotateX(45dsg);}
-    50%{transform: rotateX(90dsg);}
-    75%{transform: rotateX(180dsg);}
-    100%{transform: rotateX(360dsg);}
 }
 .cabecera__navegacion{
     grid-template-columns: auto;
@@ -54,10 +42,11 @@
 
 .barraNavegacion li{
     transition: all 1s;
+    background-image: linear-gradient(red, white, black);
 }
 .barraNavegacion li:hover{
     transform: scale(1.0);
-    background-color: rgba(8, 1, 1, 0.261);
+    background-image: linear-gradient(black, white, red);
 }
 
 .cabecera__navrgacion__lista{
@@ -109,7 +98,14 @@ a{
 }
 .insta{
 list-style: none;
+
+background-image: linear-gradient(blue, red);
 }
+.insta:hover{
+    background-image: linear-gradient(red, blue);
+    transform: scale3d(2.0);
+}
+
 
 
     
