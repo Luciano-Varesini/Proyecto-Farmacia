@@ -6,6 +6,7 @@
         "galeria galeria galeria galeria"
         "galeria galeria galeria galeria"
         "galeria galeria galeria galeria"
+        "galeria galeria galeria galeria"
         "bajo__paa bajo__pagina bajo__pagina bajo__pagina"
     
     
@@ -31,8 +32,22 @@
 .galeria__logo{
     width: 10%;
     border: solid;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-delay: 0s;
 }
-.cabecera__navegacion{}
+@keyframes girar{
+    0%{ transform: rotateX(0dsg);}
+    25%{transform: rotateX(45dsg);}
+    50%{transform: rotateX(90dsg);}
+    75%{transform: rotateX(180dsg);}
+    100%{transform: rotateX(360dsg);}
+}
+.cabecera__navegacion{
+    grid-template-columns: auto;
+}
 
 
 
@@ -90,15 +105,11 @@ a{
 }
 
 .spamm{
-    color:blue ;
-    animation-name: agrandar;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+    color:rgb(0, 0, 254) ;
+    
    
 }
-@keyframes agranda{}
-    
+
 
 .bajo__pagina{
     list-style: none;
